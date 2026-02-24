@@ -2,20 +2,14 @@
 
 A simple RESTful API built using Express.js for managing products.
 
-This API allows you to:
-- Get all products
-- Get product by ID
-- Filter products by category
-- Create new products
-- Update full product details
-- Update only stock
-- Update only price
+Live Deployment:
+https://node-assignment-2-35pk.onrender.com/
 
 ------------------------------------------------------------
 
 BASE URL
 
-http://localhost:3000
+https://node-assignment-2-35pk.onrender.com/
 
 ------------------------------------------------------------
 
@@ -25,6 +19,7 @@ TECH STACK
 - Express.js
 - CORS
 - In-memory Array (No Database)
+- Hosted on Render
 
 ------------------------------------------------------------
 
@@ -47,6 +42,9 @@ API ENDPOINTS
 
 GET /
 
+Example:
+https://node-assignment-2-35pk.onrender.com/
+
 Response:
 {
   "message": "Sever is Running"
@@ -57,6 +55,9 @@ Response:
 2) Get All Products
 
 GET /products
+
+Example:
+https://node-assignment-2-35pk.onrender.com/products
 
 Response:
 {
@@ -70,7 +71,7 @@ Response:
 GET /products/:id
 
 Example:
-/products/1
+https://node-assignment-2-35pk.onrender.com/products/1
 
 Success Response:
 {
@@ -94,7 +95,7 @@ Error 404:
 GET /products/category/:categoryname
 
 Example:
-/products/category/Electronics
+https://node-assignment-2-35pk.onrender.com/products/category/Electronics
 
 Category matching is case-insensitive.
 
@@ -113,6 +114,9 @@ Error:
 5) Create New Product
 
 POST /products
+
+Example:
+https://node-assignment-2-35pk.onrender.com/products
 
 Request Body:
 {
@@ -139,6 +143,9 @@ Error:
 
 PUT /products/:id
 
+Example:
+https://node-assignment-2-35pk.onrender.com/products/1
+
 Request Body:
 {
   "name": "Gaming Mouse",
@@ -164,6 +171,9 @@ Possible Errors:
 
 PUT /products/:id/stock
 
+Example:
+https://node-assignment-2-35pk.onrender.com/products/1/stock
+
 Request Body:
 {
   "stock": 100
@@ -184,6 +194,9 @@ Error:
 8) Update Product Price
 
 PUT /products/:id/price
+
+Example:
+https://node-assignment-2-35pk.onrender.com/products/1/price
 
 Request Body:
 {
@@ -209,13 +222,14 @@ IMPORTANT NOTES
 - IDs auto-increment.
 - Category search is case-insensitive.
 - Proper HTTP status codes are used.
+- Free Render deployments may take a few seconds to wake up.
 
 ------------------------------------------------------------
 
-HOW TO RUN
+LOCAL DEVELOPMENT
 
 npm install
 node index.js
 
-Server runs on:
+Local server runs on:
 http://localhost:3000
